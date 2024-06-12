@@ -20,7 +20,22 @@
 
 @font-face {
   font-family: 'Impact';
-  src: url('/src/fonts/impact.ttf') format('truetype');
+  src: url('../fonts/impact.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins-Light.ttf') format('truetype');
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins-Medium.ttf') format('truetype');
+  font-weight: 500;
 }
 :root {
   font-family: Impact, Poppins, sans-serif;
