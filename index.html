@@ -11,12 +11,71 @@
     />
     
     <script type="module" crossorigin src="/TalentStack/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/TalentStack/assets/index-4002bc60.css">
+    <link rel="stylesheet" href="/TalentStack/assets/index-dc92d142.css">
   </head>
   <body>
-    <header>
-  <div class="container"></div>
+    <header class="header">
+<div class="container">
+  <a 
+  class="logo-header"
+  href="./index.html">Lloyd<span class="logo-span">Jefferson.</span>
+  </a>
+  <nav class="navigation">
+
+    <div class="toggle-switch">
+      <input type="checkbox"  id="switch" class="switch-checkbox">
+      <label for="switch" class="switch-label"></label>
+  </div>
+
+      <ul class="menu-list">
+          <li><a href="#about" class="menu-item">About me</a></li>
+          <li><a href="#projects" class="menu-item">Projects</a></li>
+          <li><a href="#contacts" class="menu-item">Contacts</a></li>
+      </ul>
+  </nav>
+
+  <button class="menu-btn" type="button">
+    <svg 
+    class="icon-menu" 
+     width="32" 
+     height="32">
+      <use href="/TalentStack/assets/icons-287b9781.svg#icon-menu"></use>
+    </svg>
+  </button>
+
+
+
+  <button class="btn-close" type="button">
+    <svg class="icon-menu-close"
+    width="32"
+    height="32">
+      <use href="/TalentStack/assets/icons-287b9781.svg#icon-close"></use>
+    </svg>
+  </button>
+
+</div>
 </header>
+
+
+<div class="mobile-container">
+  
+  <nav class="nav-container">
+
+    <ul class="menu-list-modal">
+        <li><a href="#about" class="menu-item-nav">About me</a></li>
+        <li><a href="#projects" class="menu-item-nav">Projects</a></li>
+        <li><a href="#contacts" class="menu-item-nav">Contacts</a></li>
+    </ul>
+
+
+    <div class="toggle-switch-mob">
+      <input type="checkbox"  id="switch-mob" class="switch-checkbox-mob">
+      <label for="switch-mob" class="switch-label-mob"></label>
+  </div>
+  </nav>
+
+</div>
+
 
     <main>
       <section class="section">
