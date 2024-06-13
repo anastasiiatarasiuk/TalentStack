@@ -116,17 +116,72 @@
           opacity: 1;
         }
 
-        .disables {
+        .disabled {
           display: none;
         }
 
-        
+        .no-scroll {
+          overflow: hidden;
+          height: 100%;
+      }
+
+/* ============================== */
+
+.toggle-switch {
+  display: none;
+}
+
+/*  */
+
+.toggle-switch-mob {
+  position: relative;
+  width: 48px;
+  height: 24px;
+  margin: 40px auto 0 auto;
+  display: flex;
+
+}
+
+.switch-checkbox-mob {
+  display: none;
+}
+
+.switch-label-mob {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 34px;
+  background-color: #ccc;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.switch-label-mob::after {
+content: "";
+position: absolute;
+top: 2px;
+left: 2px;
+width: 20px;
+height: 20px;
+border-radius: 50%;
+background-color: var(--accent);
+transition: transform 0.3s;
+
+}
+
+.switch-checkbox-mob:checked + .switch-label-mob {
+background-color: #2A2D32;
+}
+
+.switch-checkbox-mob:checked + .switch-label-mob::after {
+transform: translateX(24px);
+
+}
 
 
-
-@media screen and (min-width: 360px) {
-   
-  }
+/* =============================== */
 
   @media screen and (min-width: 768px) {
    .mobile-container {
@@ -141,7 +196,9 @@
             text-transform: uppercase;
   }
           
-
+.navigation {
+  display: flex;
+}
 
     .menu-list {
         font-family: Poppins;
@@ -158,9 +215,53 @@
             display: none;
           }
         
-  }
 
- 
-  @media screen and (min-width: 1280px) {
-   
+          /* switch */
+        .toggle-switch {
+          position: relative;
+          width: 48px;
+          height: 24px;
+          margin-right: 40px;
+          display: flex;
+        
+      }
+      
+      .switch-checkbox {
+          display: none;
+      }
+      
+      .switch-label {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          border-radius: 34px;
+          background-color: #ccc;
+          cursor: pointer;
+          transition: background-color 0.3s;
+      }
+
+      .switch-label::after {
+        content: "";
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: var(--accent);
+        transition: transform 0.3s;
+        
+    }
+    
+    .switch-checkbox:checked + .switch-label {
+        background-color: #2A2D32;
+    }
+    
+    .switch-checkbox:checked + .switch-label::after {
+        transform: translateX(24px);
+       
+    }
+
   }
