@@ -14,27 +14,46 @@ body.classList.toggle("no-skroll")
 btnMenu.addEventListener("click", toggleMenu);
 btnClose.addEventListener("click", toggleMenu);
 
+
 menuLinks.forEach(link => {
     link.addEventListener("click", () => {
         menu.classList.remove("show");
         btnClose.classList.remove("show");
         btnMenu.classList.remove("disabled");
-    body.classList.remove("no-skroll");
+        body.classList.remove("no-skroll");
     });
 });
+
+
+if (menu.classList.contains("show")) {
+    btnClose.classList.add("visually-hidden");
+}
+
+
+
+
+
+
 
 // switch
 
 const checkbox = document.querySelector(".switch-checkbox");
 const checkboxMob = document.querySelector(".switch-checkbox-mob");
+const svgMenu = document.querySelector(".icon-menu");
+const svgClose = document.querySelector(".icon-menu-close");
+
 
 const changeBackGround = () => {
     if (checkbox.checked || checkboxMob.checked) {
         document.body.style.backgroundColor = "#292929";
         document.body.style.color = "#f0f0f0";
+        svgMenu.style.fill = "#f0f0f0";
+        svgClose.style.stroke = "#f0f0f0";
     } else {
         document.body.style.backgroundColor = "#f0f0f0";
         document.body.style.color = "#292929";
+        svgMenu.style.fill = "#292929";
+        svgClose.style.stroke = "#292929";
     }
 };
 
