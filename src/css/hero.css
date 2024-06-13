@@ -93,6 +93,7 @@
 
 .social-list-box {
   background: var(--light-grey);
+  margin: 0 -20px;
 }
 
 .social-list {
@@ -174,6 +175,11 @@
     position: relative;
   }
 
+  .social-list-box {
+    background: var(--light-grey);
+    margin: 0 -35px;
+  }
+
   .background-box-img {
     position: absolute;
 
@@ -226,7 +232,7 @@
 
   .social-list {
     width: 100%;
-    width: 1280px;
+    /* width: 1280px; */
   }
 
   .background-box-img {
