@@ -1,4 +1,3 @@
-/*  */
 .hero-title {
   margin-top: 112px;
   font-weight: 400;
@@ -86,11 +85,14 @@
   line-height: 156%;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  /* margin-bottom: 72px; */
 }
 
 .link-descr-box {
   margin-bottom: 72px;
+}
+
+.social-list-box {
+  background: var(--light-grey);
 }
 
 .social-list {
@@ -99,10 +101,6 @@
   align-items: center;
   gap: 24px;
   padding: 32px 0px;
-  width: 360px;
-  /* height: 232px; */
-  background: var(--light-grey);
-  margin: 0 -20px;
 }
 
 .social-list-item {
@@ -167,31 +165,34 @@
 
   .social-list {
     flex-direction: row;
-    width: 100%;
     justify-content: center;
     gap: 40px;
     padding: 40px 0px;
-    width: 768px;
-    margin: 0 -40px;
+  }
+
+  .background-box {
+    position: relative;
   }
 
   .background-box-img {
-    background-image: url(../img/hero/decor-bg-tablet1x.png);
-    /* height: 896px;
-    width: 704px; */
-    /* top: -76px; */
-    /* left: -4px; */
+    position: absolute;
+
+    background-image: url(../img/hero/decor-tablet-first1x.png);
+    width: 365px;
+    height: 286px;
+    left: 340px;
+    top: -78px;
   }
 
-  /* .section {
-    background: linear-gradient(
-      to bottom,
-      transparent 0%,
-      transparent 814px,
-      var(--light-grey) 104px,
-      var(--light-grey) 100%
-    );
-  } */
+  .background-box-img-second {
+    position: absolute;
+
+    background-image: url(../img/hero/decor-tablet-second1x.png);
+    width: 366px;
+    height: 276px;
+    top: 478px;
+    left: 186px;
+  }
 }
 
 /* Desctop media queries*/
@@ -201,6 +202,7 @@
     margin-left: 20px;
   }
   .hero-title {
+    margin-top: 184px;
     margin-bottom: 100px;
   }
 
@@ -225,28 +227,37 @@
   .social-list {
     width: 100%;
     width: 1280px;
-    /* margin: 0 -120px; */
   }
 
   .background-box-img {
-    background-image: url(../img/hero/decor-bg-desktop1x.png);
+    left: 850px;
+    top: -170px;
+  }
+
+  .background-box-img-second {
+    top: 288px;
+    left: 204px;
   }
 }
 
 @media screen and (min-resolution: 192dpi) and (min-width: 319px) and (max-width: 767px) {
   .background-box-img {
-    background-image: url(../img/hero/decor-bg-2x.png);
+    /* background-image: url(../img/hero/decor-bg-2x.png); */
   }
 }
 
 @media screen and (min-resolution: 192dpi) and (min-width: 768px) and (max-width: 1157px) {
   .background-box-img {
-    background-image: url(../img/hero/decor-bg-tablet2x.png);
+    /* background-image: url(../img/hero/decor-tablet-first2x.png); */
+  }
+
+  .background-box-img-second {
+    /* background-image: url(../img/hero/decor-tablet-second2x.png); */
   }
 }
 
 @media screen and (min-resolution: 192dpi) and (min-width: 1158px) {
   .background-box-img {
-    background-image: url(../img/hero/decor-bg-desktop2x.png);
+    /* background-image: url(../img/hero/decor-bg-desktop2x.png); */
   }
 }
