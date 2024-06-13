@@ -1,0 +1,175 @@
+.contacts-together {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.title-together {
+  font: 400 52px / 1.23077 'Impact', sans-serif;
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 123%;
+  letter-spacing: 0.64px;
+  text-transform: uppercase;
+  color: black;
+  margin-bottom: 40px;
+}
+
+.title-together-span {
+  color: #00b068;
+}
+
+.text-together {
+  font: 400 18px / 1.55556 'Poppins', sans-serif;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #292929;
+  margin-bottom: 32px;
+  height: 84px;
+  width: 100%;
+}
+
+.contact-list-together {
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact-list-item-together {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  height: 24px;
+  gap: 16px;
+}
+.link-contacts {
+  font: 300 16px / 1.5 'Poppins', sans-serif;
+  letter-spacing: 0.03em;
+  color: #292929;
+}
+.send-form {
+  min-width: 280px;
+  height: 208px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.input-form {
+  font: 300 16px / 1.5 'Poppins', sans-serif;
+  letter-spacing: 0.03em;
+  color: rgba(41, 41, 41, 0.4);
+  width: 100%;
+  height: 48px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background: #e4e5e6;
+  color: #292929;
+  padding: 16px;
+}
+.message-form {
+  font: 300 16px / 1.5 'Poppins', sans-serif;
+  letter-spacing: 0.03em;
+  color: rgba(41, 41, 41, 0.4);
+  width: 100%;
+  height: 128px;
+  padding: 16px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background: #e4e5e6;
+  color: #292929;
+}
+
+.button-send-together {
+  width: 100%;
+  height: 48px;
+  border-radius: 8px;
+  padding: 12px 24px;
+  background: #00b068;
+  border: none;
+  font: 500 16px / 1.5 'Poppins', sans-serif;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #f0f0f0;
+}
+.button-send-together:hover {
+  background: #009156;
+}
+
+.contacts-icon {
+  fill: none;
+  stroke: rgb(0, 176, 104);
+}
+
+@media screen and (min-width: 768px) {
+  .title-together {
+    font: 400 108px / 1.14815 'Impact', sans-serif;
+    letter-spacing: 0.02em;
+    margin-bottom: 60px;
+  }
+  .title-together-span {
+    font: 400 108px / 1.14815 'Impact', sans-serif;
+  }
+  .text-together {
+    font: 400 20px / 1.6 'Poppins', sans-serif;
+    width: 488px;
+  }
+  .contact-list-together {
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin-bottom: 60px;
+  }
+
+  .send-form {
+    min-width: 704px;
+  }
+
+  .input-form {
+    font: 300 16px / 1.5 'Poppins', sans-serif;
+    letter-spacing: 0.03em;
+  }
+
+  .button-send-together {
+    width: 173px;
+    height: 48px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .title-together {
+    letter-spacing: 0.02em;
+    height: 248px;
+    width: 514px;
+    margin-bottom: 80px;
+  }
+  .text-together {
+    margin-bottom: 110px;
+  }
+  .container-contacts {
+    display: flex;
+  }
+  .contact-list-together {
+    flex-direction: column;
+  }
+
+  .send-form {
+    min-width: 592px;
+    padding-top: 328px;
+    margin-left: 136px;
+  }
+  .input-form {
+    width: 100%;
+  }
+  .message-form {
+    width: 100%;
+  }
+
+  .container-together {
+    display: flex;
+  }
+}
