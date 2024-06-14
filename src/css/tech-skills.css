@@ -10,9 +10,11 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.section {
+
+.tech-section {
   overflow: hidden;
 }
+
 .skills {
   width: 100vw;
   display: flex;
@@ -21,7 +23,7 @@
   position: relative;
 }
 
-.firs-line {
+.firts-line {
   background-color: var(--light-accent);
   z-index: 2;
 }
