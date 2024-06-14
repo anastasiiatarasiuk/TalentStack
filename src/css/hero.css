@@ -1,5 +1,5 @@
 .hero-title {
-  margin-top: 112px;
+  margin-top: 88px;
   font-weight: 400;
   font-size: 64px;
   line-height: 125%;
@@ -93,7 +93,6 @@
 
 .social-list-box {
   background: var(--light-grey);
-  margin: 0 -20px;
 }
 
 .social-list {
@@ -137,9 +136,6 @@
   z-index: -2;
 }
 
-@media screen and (min-width: 360px) {
-}
-
 /* Tablet media queries */
 @media screen and (min-width: 768px) {
   .hero-title {
@@ -177,7 +173,6 @@
 
   .social-list-box {
     background: var(--light-grey);
-    margin: 0 -35px;
   }
 
   .background-box-img {
@@ -232,7 +227,6 @@
 
   .social-list {
     width: 100%;
-    /* width: 1280px; */
   }
 
   .background-box-img {
