@@ -83,6 +83,9 @@
       padding: 16px 20px;
      }
 
+     .nav-container {
+      z-index: 100;
+     }
 
   
 
@@ -93,7 +96,7 @@
     position: relative;
     width: 320px;
     height: 720px;
-    z-index: 2;
+    z-index: 50;
   }
 
   .background::before {
@@ -136,6 +139,7 @@
         align-items: center;
         gap: 24px;
         text-align: center;
+        cursor: pointer;
         }
 
         .menu-item-nav{
@@ -143,7 +147,7 @@
         }
 
         .menu-item-nav:hover,
-    .menu-item-nav:focus {
+        .menu-item-nav:focus {
       color: var(--accent);
     }
     /* add styles */
