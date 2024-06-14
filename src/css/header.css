@@ -82,31 +82,7 @@
         background-color: #f0f0f0;
       padding: 16px 20px;
      }
-/* 
 
-     @media screen and (min-device-pixel-ratio: 2),
-     (min-resolution: 192dpi),
-     (min-resolution: 2dppx) {
-      .mobile-container {
-        background-image: 
-        url(../img/header/backgroung-2x.png);
-      }
-   } */
-   
-/* 
-   .background {
-    display: flex;
-    width: 320px;
-    height: 720px;
-    justify-content: center;
-    align-items: center;
-    background-image: 
-    url(../img/header/Group\ 68-1x.png), url(../img/header/Group\ 64-1x\ copy.png) ;
-    background-size: 352px 264px, 170px 130px;
-    background-repeat: no-repeat, no-repeat;
-    background-position: top right, bottom right;
-    z-index: 1; 
-   } */
 
   
 
@@ -127,7 +103,9 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url(../img/header/Group\ 68-1x.png), url(../img/header/Group\ 64-1x\ copy.png);
+    background-image:
+     url(../img/header/Group\ 68-1x.png), 
+    url(../img/header/Group\ 64-1x\ copy.png);
     background-size: 352px 264px, 170px 130px;
     background-repeat: no-repeat, no-repeat;
     background-position: top right, bottom right;
@@ -135,6 +113,16 @@
     z-index: 1;
   }
 
+
+  @media screen and (min-device-pixel-ratio: 2),
+     (min-resolution: 192dpi),
+     (min-resolution: 2dppx) {
+      .background::before {
+        background-image: 
+        url(../img/header/Group\ 68-1x.png), 
+        url(../img/header/Group\ 64-2x\ copy.png);
+      }
+   } */
 
 
       .menu-list-modal {
