@@ -245,25 +245,3 @@
     left: 204px;
   }
 }
-
-@media screen and (min-resolution: 192dpi) and (min-width: 319px) and (max-width: 767px) {
-  .background-box-img {
-    /* background-image: url(../img/hero/decor-bg-2x.png); */
-  }
-}
-
-@media screen and (min-resolution: 192dpi) and (min-width: 768px) and (max-width: 1157px) {
-  .background-box-img {
-    /* background-image: url(../img/hero/decor-tablet-first2x.png); */
-  }
-
-  .background-box-img-second {
-    /* background-image: url(../img/hero/decor-tablet-second2x.png); */
-  }
-}
-
-@media screen and (min-resolution: 192dpi) and (min-width: 1158px) {
-  .background-box-img {
-    /* background-image: url(../img/hero/decor-bg-desktop2x.png); */
-  }
-}
