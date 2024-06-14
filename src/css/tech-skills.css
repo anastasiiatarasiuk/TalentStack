@@ -22,12 +22,12 @@
 }
 
 .firs-line {
-  background-color: #bfe7d0;
+  background-color: var(--light-accent);
   z-index: 2;
 }
 
 .second-line {
-  background: var(--Light-grey, #e4e5e6);
+  background: var(--light-grey);
   transform: rotate(2deg);
   z-index: 1;
   left: -2px;
@@ -35,22 +35,13 @@
 
 .first-skills-list {
   display: flex;
-  width: max-content;
-  list-style: none;
-  padding: 0;
-  margin: 0;
   animation: marquee 12s linear infinite;
-  color: var(--Black, #292929);
 }
 
 .second-skills-list {
   display: flex;
-  width: max-content;
-  list-style: none;
-  padding: 0;
-  margin: 0;
   animation: marquee 17s linear infinite;
-  color: var(--Accet-green, #00b068);
+  color: var(--accent);
 }
 
 .skills-item {
@@ -72,7 +63,7 @@
   height: 8px;
   flex-shrink: 0;
   border-radius: 2px;
-  background: var(--Accet-green, #00b068);
+  background: var(--accent);
 }
 
 .black-mark::before {
@@ -83,15 +74,15 @@
   height: 8px;
   flex-shrink: 0;
   border-radius: 2px;
-  background: var(--Black, #292929);
+  background: #292929;
 }
 
 @keyframes marquee {
   0% {
-    transform: translateX(0);
+    transform: translateX(-50%);
   }
   100% {
-    transform: translateX(-50%);
+    transform: translateX(0);
   }
 }
 
