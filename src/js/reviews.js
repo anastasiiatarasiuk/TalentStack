@@ -1,9 +1,6 @@
 import Swiper from 'swiper';
 import { Navigation, Keyboard, Mousewheel } from 'swiper/modules';
-
 import 'swiper/css';
-// import 'swiper/css/keyboard';
-// import 'swiper/css/navigation';
 import axios from 'axios';
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
@@ -31,14 +28,16 @@ function renderReviewItem(item) {
       </li>`;
 }
 
+const reviewList = document.querySelector('.reviews-list');
+
 function renderReviewList(items) {
   if (items && items.length) {
     return items.map(renderReviewItem).join('');
   }
-  return '';
+  reviewList.style.justifyContent = 'center';
+  return  '<div class="reviews-not-found"><p>Not found</p></div>';
 }
 
-const reviewList = document.querySelector('.reviews-list');
 
 
 axios.get('https://portfolio-js.b.goit.study/api/reviews')
@@ -47,7 +46,6 @@ axios.get('https://portfolio-js.b.goit.study/api/reviews')
       reviewList.innerHTML = renderReviewList(response.data);
 
       const swiper = new Swiper('.swiper', {
-
         modules: [Navigation, Keyboard, Mousewheel],
         navigation: {
           nextEl: '.swiper-button-next',
@@ -99,11 +97,36 @@ axios.get('https://portfolio-js.b.goit.study/api/reviews')
         }
       });
 
+      swiper.on('slideChange', function () {
+        updateNavigationButtons();
+      });
+
+      function updateNavigationButtons() {
+        const prevButton = document.querySelector('.swiper-button-prev');
+        const nextButton = document.querySelector('.swiper-button-next');
+
+        if (swiper.isBeginning) {
+          prevButton.disabled = true;
+        } else {
+          prevButton.disabled = false;
+        }
+
+        if (swiper.isEnd) {
+          nextButton.disabled = true;
+        } else {
+          nextButton.disabled = false;
+        }
+      }
+
     } else {
       showErrorToast('Sorry, something went wrong. Try one more time.');
+      reviewList.innerHTML = '<p class="reviews-not-found">Not found</p>';
     }
   })
   .catch(() => {
       showErrorToast('Sorry, something went wrong. Try one more time.');
+      reviewList.style.justifyContent = 'center';
+      reviewList.innerHTML = '<p class="reviews-not-found">Not found</p>';
+
   });
 
