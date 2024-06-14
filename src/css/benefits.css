@@ -12,13 +12,11 @@
         line-height: 123%;
         letter-spacing: 0.03em;
         text-transform: uppercase;
-        color: #292929;
-        /* text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25); */
         margin-bottom: 40px;
     }
 
     .benefits-title .benefits-title-span {
-        color: #00b068;
+        color: var(--accent);
     }
 
     .benefits-list {
@@ -40,7 +38,6 @@
         line-height: 156%;
         letter-spacing: 0.03em;
         text-transform: uppercase;
-        color: #292929;
     }
 
     .benefits-list-item-text {
@@ -49,7 +46,6 @@
         font-size: 16px;
         line-height: 150%;
         letter-spacing: 0.03em;
-        color: #292929;
     }
 
     .benefits-svg-icon-container {
@@ -71,24 +67,18 @@
 /* ------------------------------Tablet styles------------------------------- */
 
 @media screen and (min-width: 768px) {
-    
-    .benefits-section-container {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-    
+
     .benefits-title {      
         margin: 0;
         font-size: 108px;
         line-height: 115%;
         letter-spacing: 0.02em;
-        width: 704px;
     }
              
     .benefits-list {
         flex-direction: row;
         flex-wrap: wrap;
+        margin-top: -20px;
     }
 
     .benefits-list-item {    
@@ -109,27 +99,25 @@
 
 @media screen and (min-width: 1280px) {
 
-/* .benefits-section{
-    background-image: url(../img/benefits/backgroundimg.png);
-    background-size: 526px 408px;
-    background-repeat: no-repeat;
-    background-position: top right;
-}
   .benefits-section-container {
-     margin-top: 150px;
-  } */
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+  }
 
+  .benefits-section {
+      background-image: url(../img/benefits/backgroundimg.png);
+      background-repeat: no-repeat;
+      width: 526px;
+      height: 408px;
+      margin-top: -250px;
+  }
     .benefits-title {
         width: 686px;
-        position: relative;
-        z-index: 1;
-        margin-top: 0;
     }
 
     .benefits-list {
-        position: absolute;
-        z-index: 0;
-        margin-bottom: -580px;
+        margin-top: -100px;
     }
 
     .benefits-list-item {
