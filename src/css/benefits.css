@@ -9,7 +9,7 @@
         font-family: "Impact", sans-serif;
         font-weight: 400;
         font-size: 52px;
-        line-height: 123%;
+        line-height: 1.23;
         letter-spacing: 0.03em;
         text-transform: uppercase;
         margin-bottom: 40px;
@@ -35,7 +35,7 @@
         font-family: "Poppins",sans-serif;
         font-weight: 400;
         font-size: 18px;
-        line-height: 156%;
+        line-height: 1.56;
         letter-spacing: 0.03em;
         text-transform: uppercase;
     }
@@ -44,7 +44,7 @@
         font-family: v"Poppins",sans-serif;
         font-weight: 300;
         font-size: 16px;
-        line-height: 150%;
+        line-height: 1.5;
         letter-spacing: 0.03em;
     }
 
@@ -71,7 +71,7 @@
     .benefits-title {      
         margin: 0;
         font-size: 108px;
-        line-height: 115%;
+        line-height: 1.15;
         letter-spacing: 0.02em;
     }
              
@@ -91,7 +91,7 @@
   
     .benefits-list-item-title { 
         font-size: 20px;
-        line-height: 160%;
+        line-height: 1.6;
     }
 }
 
