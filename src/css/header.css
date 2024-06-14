@@ -3,7 +3,7 @@
     position: relative;
     }
     
-    .container {
+    .container-head {
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -69,23 +69,20 @@
 /* modal menu */
 
       .mobile-container {
-        position: fixed;
+        position: relative;
         display: none;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        /* justify-content: center; */
         top: 64px;
         right: 0;
         width: 100%;
         height: calc(100% - 64px); 
-        z-index: 2;
-        background-image: 
-        url(../img/header/backgroung-1x.png);
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-size:  320px 704px;
+        z-index: 3;
+        background-color: #f0f0f0;
+      padding: 16px 20px;
      }
-
+/* 
 
      @media screen and (min-device-pixel-ratio: 2),
      (min-resolution: 192dpi),
@@ -94,8 +91,52 @@
         background-image: 
         url(../img/header/backgroung-2x.png);
       }
-   }
+   } */
    
+/* 
+   .background {
+    display: flex;
+    width: 320px;
+    height: 720px;
+    justify-content: center;
+    align-items: center;
+    background-image: 
+    url(../img/header/Group\ 68-1x.png), url(../img/header/Group\ 64-1x\ copy.png) ;
+    background-size: 352px 264px, 170px 130px;
+    background-repeat: no-repeat, no-repeat;
+    background-position: top right, bottom right;
+    z-index: 1; 
+   } */
+
+  
+
+  .background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 320px;
+    height: 720px;
+    z-index: 2;
+  }
+
+  .background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(../img/header/Group\ 68-1x.png), url(../img/header/Group\ 64-1x\ copy.png);
+    background-size: 352px 264px, 170px 130px;
+    background-repeat: no-repeat, no-repeat;
+    background-position: top right, bottom right;
+    filter: blur(3px);
+    z-index: 1;
+  }
+
+
+
       .menu-list-modal {
         font-family: Poppins;
         font-size: 16px;
@@ -131,12 +172,15 @@
 
         .no-scroll {
           overflow: hidden;
+          width: 100%;
+          height: 100%;
         }
 
 /* ============================== */
 
 .toggle-switch {
   display: none;
+
 }
 
 /*  */
@@ -147,6 +191,7 @@
   height: 24px;
   margin: 40px auto 0 auto;
   display: flex;
+  z-index: 10;
 
 }
 
@@ -196,10 +241,18 @@ transform: translateX(24px);
     display: none;
    }
 
+   .backdrob {
+    display: none;
+   }
+
    .btn-close {
     display: none;
    }
 
+   .no-scroll {
+    overflow: scroll;
+    
+  }
 
   .logo-header {
             font-size: 32px;
