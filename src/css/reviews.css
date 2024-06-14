@@ -1,57 +1,102 @@
-
-
-
-
 @media screen and (min-width: 360px) {
 
-  /* color variables */
-  --inactive-ctrl-color: #CCCCCC;
-  --active-ctrl-color: #292929;
-  --section-title-color: #292929;
-
-
+  /*!* color variables *!*/
+  /*--inactive-ctrl-color: #CCCCCC;*/
+  /*--active-ctrl-color: #292929;*/
+  /*--section-title-color: #292929;*/
   .reviews-title {
-    color: var(--section-title-color);
     font-family: Impact, serif;
     font-size: 52px;
     line-height: 1.23;
-    letter-spacing: 1.8px;
+    letter-spacing: 0.03em;
     text-transform: uppercase;
+    text-align: center
   }
+
   .reviews-list {
+    margin-top: 40px;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 24px;
+    /*align-items: stretch;*/
+
+    /*align-items: flex-start;*/
+    /*gap: 32px;*/
   }
 
   .reviews-item {
-    width: 320px;
+    width: 100%;
     padding: 32px;
+    border-radius: 16px;
+    background: var(--light-grey);
+    outline: none;
   }
 
-  .btn-switch-reviews{
-    color: var(--active-ctrl-color);
+  .btn-switch-reviews {
+    color: #292929;
     border-radius: 8px;
     border: 1px solid rgba(41, 41, 41, 0.30);
     width: 40px;
     height: 40px;
-    padding: 12px;
+    display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  .btn-switch-reviews[disabled]{
-    color: var(--inactive-ctrl-color);
+  /*.btn-switch-reviews > span {*/
+  /*  display: flex;*/
+  /*  justify-content: center;*/
+  /*  align-items: center;*/
+  /*  color: #292929;*/
+  /*}*/
+
+  .btn-switch-reviews[disabled] {
+    color: #CCCCCC;;
+  }
+
+  .block-author-review {
+    margin-top: 24px;
+    display: flex;
+    gap: 16px;
+    align-items: center
+  }
+
+  .author-photo-review {
+    border-radius: 24px;
+    background: #797979;
+    width: 40px;
+    height: 40px;
+  }
+
+  .author-name-review {
+    font-family: Poppins, serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+  }
+
+  .block-switch-reviews {
+    margin-top: 24px;
+    display: flex;
+    gap: 16px;
+    justify-content: flex-end;
   }
 }
 
 /* Tablet media queries */
 @media screen and (min-width: 768px) {
+  .reviews-title {
+    font-size: 108px;
+    line-height: 1.14;
+  }
 
+  .reviews-list {
+    margin-top: 60px;
+  }
 }
 
 /* Desctop media queries*/
 @media screen and (min-width: 1280px) {
-
+  .reviews-list {
+    margin-top: 80px;
+  }
 }
