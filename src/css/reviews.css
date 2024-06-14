@@ -83,15 +83,6 @@
     background-color: var(--light-grey);
   }
 
-  /*.swiper-button-prev[disabled], .swiper-button-next[disabled] {*/
-  /*  cursor: not-allowed;*/
-  /*  border: 1px solid rgba(41, 41, 41, 0.10);*/
-  /*  stroke: #CCCCCC;*/
-  /*  background-color: #f0f0f0;*/
-  /*  fill: transparent;*/
-  /*}*/
-
-
   .reviews-not-found {
     font-family: Poppins, serif;
     font-size: 32px;
@@ -99,7 +90,9 @@
     letter-spacing: 0.01em;
     text-align: center;
   }
-
+  .hidden {
+    display: none;
+  }
 }
 
 /* Tablet media queries */
