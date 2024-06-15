@@ -1,0 +1,251 @@
+.hero-section {
+  padding-top: 96px;
+}
+
+.hero-title {
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 125%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  font-family: 'Impact';
+  margin-bottom: 72px;
+}
+
+.avatar-photo {
+  display: none;
+}
+
+.text-green {
+  color: var(--accent);
+}
+
+.order-link-box {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 72px;
+}
+
+.arrow {
+  display: inline-block;
+  margin-left: 24px;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid var(--accent);
+  border-left: 2px solid var(--accent);
+  transform-origin: center;
+  transform: rotate(135deg);
+  border-radius: 1px;
+}
+
+.arrow::after {
+  content: '';
+  display: block;
+  width: 2px;
+  height: 45px;
+  height: 28px;
+  background-color: var(--accent);
+  transform: rotate(-45deg) translate(9px, 2px);
+  border-radius: 1px;
+}
+
+.order-project {
+  position: relative;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 156%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.green-box {
+  position: absolute;
+  z-index: -1;
+  border-radius: 16px;
+  width: 165px;
+  height: 92px;
+  background-color: var(--light-accent);
+  top: -34px;
+  left: 110px;
+}
+
+.order-project:hover .green-box {
+  background-color: rgba(0, 176, 104, 0.6);
+}
+
+.order-project:focus .green-box {
+  background-color: rgba(0, 176, 104, 0.6);
+}
+
+.order-project:active .green-box {
+  background-color: rgba(0, 176, 104, 0.6);
+}
+
+.hero-descr {
+  font-size: 18px;
+  line-height: 156%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.link-descr-box {
+  margin-bottom: 72px;
+}
+
+.social-list-box {
+  background: var(--light-grey);
+}
+
+.social-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  padding: 32px 0px;
+}
+
+.social-list-item {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-list-item:hover {
+  color: var(--accent);
+}
+.social-list-item:active {
+  color: var(--accent);
+}
+.social-list-item:focus {
+  color: var(--accent);
+}
+
+.background-box {
+  position: relative;
+}
+
+.background-box-img {
+  position: absolute;
+  background-image: url(../img/hero/decor-bg.png);
+  background-repeat: no-repeat;
+  width: 320px;
+  height: 704px;
+  top: -96px;
+  left: -5px;
+  z-index: -2;
+}
+
+/* Tablet media queries */
+@media screen and (min-width: 768px) {
+  .hero-section {
+    padding-top: 88px;
+  }
+
+  .hero-title {
+    font-size: 136px;
+    line-height: 115%;
+    letter-spacing: 0.01em;
+  }
+
+  .order-project {
+    font-size: 20px;
+    line-height: 160%;
+  }
+
+  .green-box {
+    width: 261px;
+    height: 96px;
+    left: 112px;
+  }
+
+  .hero-descr {
+    font-size: 20px;
+    line-height: 160%;
+  }
+
+  .social-list {
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px 0px;
+  }
+
+  .background-box {
+    position: relative;
+  }
+
+  .social-list-box {
+    background: var(--light-grey);
+  }
+
+  .background-box-img {
+    position: absolute;
+
+    background-image: url(../img/hero/decor-tablet-first.png);
+    width: 365px;
+    height: 286px;
+    left: 340px;
+    top: -78px;
+  }
+
+  .background-box-img-second {
+    position: absolute;
+
+    background-image: url(../img/hero/decor-tablet-second.png);
+    width: 366px;
+    height: 276px;
+    top: 478px;
+    left: 186px;
+  }
+}
+
+/* Desctop media queries*/
+@media screen and (min-width: 1280px) {
+  .hero-section {
+    padding-top: 168px;
+  }
+
+  .avatar-photo {
+    display: inline-block;
+    margin-left: 20px;
+  }
+  .hero-title {
+    margin-bottom: 100px;
+  }
+
+  .link-descr-box {
+    display: flex;
+    gap: 136px;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .hero-descr {
+    width: 592px;
+    position: absolute;
+    left: 620px;
+    top: -35px;
+  }
+
+  .order-link-box {
+    margin-left: 72px;
+  }
+
+  .social-list {
+    width: 100%;
+  }
+
+  .background-box-img {
+    left: 850px;
+    top: -170px;
+  }
+
+  .background-box-img-second {
+    top: 288px;
+    left: 204px;
+  }
+}
