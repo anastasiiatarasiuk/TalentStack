@@ -14,6 +14,8 @@ const initialSkillsItems = [
   'Node.js',
   'React Native',
   'Typescript',
+  'HTML/CSS',
+  'Typescript',
 ];
 
 function updateSkillsItems() {
@@ -35,7 +37,7 @@ function updateSkillsItems() {
     secondSkillsList.appendChild(secondItem);
   });
 
-  if (screenWidth > 1280) {
+  if (screenWidth > 360) {
     initialSkillsItems.forEach(skill => {
       const firstItem = document.createElement('li');
       firstItem.className = 'skills-item green-mark';
