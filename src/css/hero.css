@@ -1,5 +1,8 @@
+.hero-section {
+  padding-top: 96px;
+}
+
 .hero-title {
-  margin-top: 88px;
   font-weight: 400;
   font-size: 64px;
   line-height: 125%;
@@ -138,6 +141,10 @@
 
 /* Tablet media queries */
 @media screen and (min-width: 768px) {
+  .hero-section {
+    padding-top: 88px;
+  }
+
   .hero-title {
     font-size: 136px;
     line-height: 115%;
@@ -198,12 +205,15 @@
 
 /* Desctop media queries*/
 @media screen and (min-width: 1280px) {
+  .hero-section {
+    padding-top: 168px;
+  }
+
   .avatar-photo {
     display: inline-block;
     margin-left: 20px;
   }
   .hero-title {
-    margin-top: 184px;
     margin-bottom: 100px;
   }
 
