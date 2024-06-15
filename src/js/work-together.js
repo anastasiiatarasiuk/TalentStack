@@ -8,6 +8,8 @@ const inputFormValue = document.querySelector('.input-form');
 const checkMark = document.querySelector('.checkmark');
 const messageField = document.querySelector('.message-form');
 
+// validate form functions
+
 const validateEmail = () => {
   const email = sendForm.elements['email'].value.trim();
   const emailPattern = new RegExp(
@@ -40,7 +42,7 @@ sendForm.addEventListener('submit', async e => {
     iziToast.error({
       title: 'OOPS',
       message: 'Please enter a valid email address.',
-      position: 'topCenter',
+      position: 'topRight',
     });
     return;
   }
@@ -49,10 +51,11 @@ sendForm.addEventListener('submit', async e => {
     iziToast.error({
       title: 'OOPS',
       message: 'Message field and email cannot be empty.',
-      position: 'topCenter',
+      position: 'topRight',
     });
     return;
   }
+  // POST question
 
   try {
     const response = await axios.post(
@@ -66,11 +69,10 @@ sendForm.addEventListener('submit', async e => {
     if (response.status === 201) {
       sendForm.reset();
       checkMark.style.display = 'none';
-
       iziToast.info({
         title: 'YES YES',
         message: 'Thank you for your interest in cooperation!',
-        position: 'topCenter',
+        position: 'topRight',
       });
     } else {
       throw new Error(response.data.message || 'Unknown error');
@@ -80,7 +82,7 @@ sendForm.addEventListener('submit', async e => {
       title: 'error',
       message:
         error.response?.data?.message || error.message || 'Unknown error',
-      position: 'topCenter',
+      position: 'topRight',
     });
   }
 });
