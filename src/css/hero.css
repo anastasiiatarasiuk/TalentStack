@@ -10,6 +10,8 @@
   text-transform: uppercase;
   font-family: 'Impact';
   margin-bottom: 72px;
+
+  position: relative;
 }
 
 .avatar-photo {
@@ -51,6 +53,7 @@
 }
 
 .order-project {
+  z-index: 1;
   position: relative;
   font-weight: 400;
   font-size: 18px;
@@ -72,15 +75,15 @@
 }
 
 .order-project:hover .green-box {
-  background-color: rgba(0, 176, 104, 0.6);
+  background-color: rgba(0, 176, 104, 0.6) !important;
 }
 
 .order-project:focus .green-box {
-  background-color: rgba(0, 176, 104, 0.6);
+  background-color: rgba(0, 176, 104, 0.6) !important;
 }
 
 .order-project:active .green-box {
-  background-color: rgba(0, 176, 104, 0.6);
+  background-color: rgba(0, 176, 104, 0.6) !important;
 }
 
 .hero-descr {
@@ -88,6 +91,8 @@
   line-height: 156%;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+
+  position: relative;
 }
 
 .link-descr-box {
@@ -130,13 +135,12 @@
 
 .background-box-img {
   position: absolute;
-  background-image: url(../img/hero/decor-bg.png);
+  background-image: url(./img/hero/decor-bg.png);
   background-repeat: no-repeat;
   width: 320px;
   height: 704px;
   top: -96px;
   left: -5px;
-  z-index: -2;
 }
 
 /* Tablet media queries */
@@ -185,7 +189,7 @@
   .background-box-img {
     position: absolute;
 
-    background-image: url(../img/hero/decor-tablet-first.png);
+    background-image: url(./img/hero/decor-tablet-first.png);
     width: 365px;
     height: 286px;
     left: 340px;
@@ -195,7 +199,7 @@
   .background-box-img-second {
     position: absolute;
 
-    background-image: url(../img/hero/decor-tablet-second.png);
+    background-image: url(./img/hero/decor-tablet-second.png);
     width: 366px;
     height: 276px;
     top: 478px;
