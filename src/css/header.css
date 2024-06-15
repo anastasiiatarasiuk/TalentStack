@@ -1,5 +1,5 @@
 .header {
-    padding: 36px 0;
+    padding: 20px 0;
     position: relative;
     }
     
@@ -139,11 +139,12 @@
         align-items: center;
         gap: 24px;
         text-align: center;
-        cursor: pointer;
+        
         }
 
         .menu-item-nav{
           transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+          cursor: pointer;
         }
 
         .menu-item-nav:hover,
@@ -229,6 +230,12 @@ transform: translateX(24px);
 /* =============================== */
 
   @media screen and (min-width: 768px) {
+
+    .header {
+      padding: 36px 0;
+    }
+
+
    .mobile-container {
     display: none;
    }
