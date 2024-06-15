@@ -1,3 +1,4 @@
+
 const btnMenu = document.querySelector(".menu-btn");
 const btnClose = document.querySelector(".btn-close");
 const backdrob = document.querySelector(".mobile-container");
@@ -8,45 +9,39 @@ const greenBoxHero = document.querySelector('.green-box');
 
 
 const toggleMenu = () => {
-  backdrob.classList.toggle("show");
-btnMenu.classList.toggle("disabled");
-btnClose.classList.toggle("show");
-body.classList.toggle("no-scroll")
+  backdrob.classList.toggle('show');
+  btnMenu.classList.toggle('disabled');
+  btnClose.classList.toggle('show');
+  body.classList.toggle('no-scroll');
 };
 
-btnMenu.addEventListener("click", toggleMenu);
-btnClose.addEventListener("click", toggleMenu);
-
+btnMenu.addEventListener('click', toggleMenu);
+btnClose.addEventListener('click', toggleMenu);
 
 menuLinks.forEach(link => {
-    link.addEventListener("click", () => {
-      backdrob.classList.remove("show");
-        btnClose.classList.remove("show");
-        btnMenu.classList.remove("disabled");
-        body.classList.remove("no-scroll");
-    });
+  link.addEventListener('click', () => {
+    backdrob.classList.remove('show');
+    btnClose.classList.remove('show');
+    btnMenu.classList.remove('disabled');
+    body.classList.remove('no-scroll');
+  });
 });
 
 
+const checkbox = document.querySelector('.switch-checkbox');
+const checkboxMob = document.querySelector('.switch-checkbox-mob');
+const svgMenu = document.querySelector('.icon-menu');
+const svgClose = document.querySelector('.icon-menu-close');
 
+checkboxMob.addEventListener('change', function () {
+  changeBackGround(checkboxMob.checked);
+  checkbox.checked = checkboxMob.checked;
+});
 
-const checkbox = document.querySelector(".switch-checkbox");
-const checkboxMob = document.querySelector(".switch-checkbox-mob");
-const svgMenu = document.querySelector(".icon-menu");
-const svgClose = document.querySelector(".icon-menu-close");
-
-
-checkboxMob.addEventListener("change", function() {
-    changeBackGround(checkboxMob.checked)
-    checkbox.checked = checkboxMob.checked;
-  });
-
-
-
-checkbox.addEventListener("change", function() {
-    changeBackGround(checkbox.checked )
-    checkboxMob.checked = checkbox.checked;
-  });
+checkbox.addEventListener('change', function () {
+  changeBackGround(checkbox.checked);
+  checkboxMob.checked = checkbox.checked;
+});
 
  export function changeBackGround (isChecked) {
     document.body.style.backgroundColor = isChecked ? "#292929": "#f0f0f0";
@@ -73,3 +68,4 @@ backgroundElement.style.setProperty('--background-image', `url(${backgroundImage
 
 const backgroundElementBottom = document.querySelector('.background');
 backgroundElementBottom.style.setProperty('--background-image-bottom', `url(${backgroundImageBottom})`);
+
