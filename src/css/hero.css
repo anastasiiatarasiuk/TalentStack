@@ -135,7 +135,7 @@
 
 .background-box-img {
   position: absolute;
-  background-image: url(./img/hero/decor-bg.png);
+  background-image: url(../img/hero/decor-bg.png);
   background-repeat: no-repeat;
   width: 320px;
   height: 704px;
@@ -189,7 +189,7 @@
   .background-box-img {
     position: absolute;
 
-    background-image: url(./img/hero/decor-tablet-first.png);
+    background-image: url(../img/hero/decor-tablet-first.png);
     width: 365px;
     height: 286px;
     left: 340px;
@@ -199,7 +199,7 @@
   .background-box-img-second {
     position: absolute;
 
-    background-image: url(./img/hero/decor-tablet-second.png);
+    background-image: url(../img/hero/decor-tablet-second.png);
     width: 366px;
     height: 276px;
     top: 478px;
