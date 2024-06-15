@@ -12,7 +12,6 @@
   line-height: 123%;
   letter-spacing: 0.64px;
   text-transform: uppercase;
-  color: black;
   margin-bottom: 40px;
 }
 
@@ -24,7 +23,7 @@
   font: 400 18px / 1.55556 'Poppins', sans-serif;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #292929;
+
   margin-bottom: 32px;
   height: 84px;
   width: 100%;
@@ -47,11 +46,15 @@
 .link-contacts {
   font: 300 16px / 1.5 'Poppins', sans-serif;
   letter-spacing: 0.03em;
-  color: #292929;
 }
+
+.link-contacts:hover,
+.link-contacts:focus {
+  color: #00b068;
+}
+
 .send-form {
-  min-width: 280px;
-  height: 208px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -70,6 +73,13 @@
   color: #292929;
   padding: 16px;
 }
+.value-email {
+  font: 300 12px / 1.33333 'Poppins', sans-serif;
+  letter-spacing: 0.04em;
+  color: #e74a3b;
+  display: none;
+}
+
 .message-form {
   font: 300 16px / 1.5 'Poppins', sans-serif;
   letter-spacing: 0.03em;
@@ -82,6 +92,7 @@
   outline: none;
   background: #e4e5e6;
   color: #292929;
+  resize: none;
 }
 
 .button-send-together {
@@ -99,10 +110,24 @@
 .button-send-together:hover {
   background: #009156;
 }
+.input-container {
+  position: relative;
+}
 
 .contacts-icon {
   fill: none;
   stroke: rgb(0, 176, 104);
+}
+
+.checkmark {
+  fill: rgb(0, 176, 104);
+  stroke: white;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  display: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -123,10 +148,6 @@
     justify-content: flex-start;
     flex-direction: row;
     margin-bottom: 60px;
-  }
-
-  .send-form {
-    min-width: 704px;
   }
 
   .input-form {
