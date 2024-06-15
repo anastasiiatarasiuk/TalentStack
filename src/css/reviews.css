@@ -1,9 +1,9 @@
-@media screen and (min-width: 360px) {
 
-  /*!* color variables *!*/
-  /*--inactive-ctrl-color: #CCCCCC;*/
-  /*--active-ctrl-color: #292929;*/
-  /*--section-title-color: #292929;*/
+  .swiper {
+   padding: 0 20px !important;
+  }
+
+
   .reviews-title {
     font-family: Impact, serif;
     font-size: 52px;
@@ -28,6 +28,9 @@
     border-radius: 16px;
     background: var(--light-grey);
     outline: none;
+    font-weight: 300;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
   }
 
   .block-author-review {
@@ -93,10 +96,14 @@
   .hidden {
     display: none;
   }
-}
 
 /* Tablet media queries */
 @media screen and (min-width: 768px) {
+
+  .swiper {
+    padding: 0 32px !important;
+  }
+
   .reviews-title {
     font-size: 108px;
     line-height: 1.14;

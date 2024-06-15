@@ -54,7 +54,7 @@ function initSlider() {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-    autoHeight: true,
+    autoHeight: false,
     breakpoints: {
       320: {
         slidesPerView: 1,
