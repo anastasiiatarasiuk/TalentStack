@@ -77,7 +77,7 @@
         justify-content: center;
         right: 0;
         width: 100%;
-        height: calc(100% - 64px); 
+        height: 100vh; 
         z-index: 3;
         background-color: #f0f0f0;
       padding: 16px 20px;
@@ -95,37 +95,30 @@
     align-items: center;
     position: relative;
     width: 320px;
-    height: 720px;
+    height: 720px;  
     z-index: 50;
   }
 
   .background::before {
+  
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-image:
-     url(../img/header/Group\ 68-1x.png), 
-    url(../img/header/Group\ 64-1x\ copy.png);
+    /* background-image:
+     url(../img/header/Group68-1x.png), 
+    url(../img/header/Group64-1x.png); */
+
+    background-image: var(--background-image), var(--background-image-bottom);
+
     background-size: 352px 264px, 170px 130px;
     background-repeat: no-repeat, no-repeat;
     background-position: top right, bottom right;
     filter: blur(3px);
     z-index: 1;
   }
-
-
-  @media screen and (min-device-pixel-ratio: 2),
-     (min-resolution: 192dpi),
-     (min-resolution: 2dppx) {
-      .background::before {
-        background-image: 
-        url(../img/header/Group\ 68-1x.png), 
-        url(../img/header/Group\ 64-2x\ copy.png);
-      }
-   } 
 
 
       .menu-list-modal {

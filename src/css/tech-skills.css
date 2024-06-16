@@ -23,7 +23,7 @@
   position: relative;
 }
 
-.firts-line {
+.first-line {
   background-color: var(--light-accent);
   z-index: 2;
 }
