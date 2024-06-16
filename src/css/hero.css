@@ -10,6 +10,8 @@
   text-transform: uppercase;
   font-family: 'Impact';
   margin-bottom: 72px;
+
+  position: relative;
 }
 
 .avatar-photo {
@@ -51,6 +53,7 @@
 }
 
 .order-project {
+  z-index: 1;
   position: relative;
   font-weight: 400;
   font-size: 18px;
@@ -72,15 +75,15 @@
 }
 
 .order-project:hover .green-box {
-  background-color: rgba(0, 176, 104, 0.6);
+  background-color: rgba(0, 176, 104, 0.6) !important;
 }
 
 .order-project:focus .green-box {
-  background-color: rgba(0, 176, 104, 0.6);
+  background-color: rgba(0, 176, 104, 0.6) !important;
 }
 
 .order-project:active .green-box {
-  background-color: rgba(0, 176, 104, 0.6);
+  background-color: rgba(0, 176, 104, 0.6) !important;
 }
 
 .hero-descr {
@@ -88,6 +91,8 @@
   line-height: 156%;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+
+  position: relative;
 }
 
 .link-descr-box {
@@ -136,7 +141,6 @@
   height: 704px;
   top: -96px;
   left: -5px;
-  z-index: -2;
 }
 
 /* Tablet media queries */
