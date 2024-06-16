@@ -1,0 +1,133 @@
+
+.swiper {
+  padding: 0 20px !important;
+}
+
+.reviews-title {
+  font-family: Impact, serif;
+  font-size: 52px;
+  line-height: 1.23;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.reviews-list {
+  margin-top: 40px;
+  display: flex;
+}
+
+.reviews-item {
+  width: 100%;
+  padding: 32px;
+  border-radius: 16px;
+  background: var(--light-grey);
+  outline: none;
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+.reviews-content {
+  flex-grow: 1;
+}
+.block-author-review {
+  margin-top: 24px;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.author-photo-review {
+  border-radius: 24px;
+  background: #797979;
+  width: 40px;
+  height: 40px;
+}
+
+.author-name-review {
+  font-family: Poppins, serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+}
+
+.block-switch-reviews {
+  margin-top: 24px;
+  display: flex;
+  gap: 16px;
+  justify-content: flex-end;
+}
+
+.btn-switch-reviews {
+  border-radius: 8px;
+  border: 1px solid rgba(41, 41, 41, 0.30);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-button-prev:disabled, .swiper-button-next:disabled {
+  opacity: 0.1;
+  cursor: not-allowed;
+}
+
+.swiper-button-prev .arrow-icon, .swiper-button-next .arrow-icon {
+  stroke: #292929;
+  fill: transparent;
+}
+
+.swiper-button-prev:hover, .swiper-button-next:hover {
+  background-color: var(--light-grey);
+}
+
+.reviews-not-found {
+  font-family: Poppins, serif;
+  font-size: 32px;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.swiper-wrapper {
+  align-items: stretch;
+}
+
+.swiper-slide {
+  height: auto !important;
+}
+
+/* Tablet media queries */
+@media screen and (min-width: 768px) {
+
+  .swiper {
+    padding: 0 32px !important;
+  }
+
+  .reviews-title {
+    font-size: 108px;
+    line-height: 1.14;
+  }
+
+  .reviews-list {
+    margin-top: 60px;
+  }
+}
+
+/* Desctop media queries*/
+@media screen and (min-width: 1280px) {
+  .reviews-list {
+    margin-top: 80px;
+  }
+}
