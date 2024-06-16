@@ -1,5 +1,3 @@
-@media screen and (min-width: 360px) {
-
     .benefits-section-container {
         flex-direction: column;
     }
@@ -41,7 +39,7 @@
     }
 
     .benefits-list-item-text {
-        font-family: v"Poppins",sans-serif;
+        font-family: "Poppins",sans-serif;
         font-weight: 300;
         font-size: 16px;
         line-height: 1.5;
@@ -62,7 +60,6 @@
         stroke: #00b068;
         fill: transparent;
     }
-}
 
 /* ------------------------------Tablet styles------------------------------- */
 
