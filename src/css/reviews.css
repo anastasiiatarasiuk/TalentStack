@@ -26,13 +26,20 @@
   font-weight: 300;
   line-height: 1.5;
   letter-spacing: 0.03em;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: space-between;
+
 }
 
+.reviews-content {
+  flex-grow: 1;
+}
 .block-author-review {
   margin-top: 24px;
   display: flex;
   gap: 16px;
-  align-items: center
+  align-items: center;
 }
 
 .author-photo-review {
@@ -91,6 +98,14 @@
 
 .hidden {
   display: none;
+}
+
+.swiper-wrapper {
+  align-items: stretch;
+}
+
+.swiper-slide {
+  height: auto !important;
 }
 
 /* Tablet media queries */

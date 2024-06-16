@@ -20,7 +20,9 @@ function showErrorToast(message) {
 
 function renderReviewItem(item) {
   return ` <li class="reviews-item swiper-slide" data-id="${item._id}" tabindex="0">
-        <p>${item.review}</p>
+       <div class="reviews-content ">
+       <p>${item.review}</p>
+</div>
         <div class="block-author-review">
           <img class="author-photo-review" src="${item.avatar_url}" alt="photo author">
           <p class="author-name-review">${item.author}</p>
