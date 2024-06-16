@@ -1,0 +1,143 @@
+.about-section-title {
+  font-family: Impact;
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 123%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+.title-part {
+  color: var(--accent);
+}
+.about-img {
+  margin-bottom: 40px;
+}
+
+.bio-container {
+  margin-bottom: 40px;
+}
+.education-container {
+  margin-bottom: 40px;
+}
+.title {
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 125%;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+.descr {
+  font-family: Poppins;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+}
+.descr:first-of-type {
+  padding-bottom: 24px;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 0;
+}
+.info-items {
+  display: flex;
+  position: relative;
+}
+.info {
+  font-family: Poppins, sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+}
+.info-items::before {
+  content: '';
+  display: block;
+  border-radius: 1px;
+  width: 4px;
+  height: 4px;
+  background-color: var(--accent);
+  margin: 10px;
+  flex-shrink: 0;
+}
+
+@media (min-width: 768px) {
+  .about-section-title {
+    font-size: 108px;
+    line-height: 115%;
+    letter-spacing: 0.02em;
+  }
+  .title {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 133%;
+    letter-spacing: 0.01em;
+  }
+  .content {
+    display: flex;
+    gap: 32px;
+    margin-bottom: 60px;
+  }
+  .about-img {
+    margin: 0;
+    padding-top: 368px;
+  }
+  .image-container {
+    display: flex;
+    justify-content: center;
+  }
+  .bio-container {
+    flex: 1;
+    margin: 0;
+  }
+  .info {
+    font-size: 16px;
+  }
+  .background-img {
+    background-image: url(../img/about-me-img/about-me-bg.png);
+    background-repeat: no-repeat;
+    width: 336px;
+    height: 252px;
+    position: absolute;
+  }
+  .education-role-container {
+    display: flex;
+    gap: 32px;
+    position: relative;
+  }
+  .education-container,
+  .role-container {
+    flex: 1;
+    margin: 0;
+    padding-left: 5px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .content {
+    gap: 136px;
+    margin-bottom: 80px;
+    margin-left: 212px;
+  }
+  .about-img {
+    padding-top: 272px;
+  }
+  .background-img {
+    width: 384px;
+    height: 288px;
+    margin-left: 104px;
+  }
+  .descr {
+    padding-bottom: 40px;
+  }
+  .education-role-container {
+    gap: 136px;
+    margin-left: 212px;
+  }
+}
