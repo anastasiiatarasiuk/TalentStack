@@ -27,7 +27,7 @@ const renderProjects = (startIndex, numProjects) => {
         <a href="https://github.com/anastasiiatarasiuk/TalentStack" target="_blank" class="projects-item-btn">
           VISIT
           <svg class="projects-item-btn-icon">
-            <use href="${spriteUrl}#icon-brush"></use>
+            <use href="${spriteUrl}#icon-arrow-visit"></use>
           </svg>
         </a>
       </div>

@@ -21,16 +21,19 @@
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
 
   @media screen and (min-width: 768px) {
-    margin-bottom: 60px;
-  }
+    .projects-title {
+      margin-bottom: 60px;
+  }}
 
   @media screen and (min-width: 1280px) {
-    font-size: 108px;
-    margin-bottom: 80px;
-  }
-}
+    .projects-title {
+      font-size: 108px;
+      margin-bottom: 80px;
+  }}
+
 
 .projects-list {
   display: flex;
@@ -39,15 +42,17 @@
   align-items: center;
   gap: 40px;
   width: 100%;
+}
 
   @media screen and (min-width: 768px) {
-    gap: 60px;
-  }
+    .projects-list {
+      gap: 60px;
+  }}
 
   @media screen and (min-width: 1280px) {
-    gap: 80px;
-  }
-}
+    .projects-list {
+      gap: 80px;
+  }}
 
 .projects-item {
   max-width: 1008px;
@@ -75,24 +80,25 @@
   line-height: 1.5;
   letter-spacing: 0.03em;
   margin-bottom: 16px;
-  
+}
 
   @media screen and (min-width: 768px) {
-    margin-bottom: 20px;
-  }
-}
+    .projects-item-skills {
+      margin-bottom: 20px;
+  }}
 
 .projects-item-bottom {
   display: flex;
   flex-direction: column;
+}
 
   @media screen and (min-width: 768px) {
+    .projects-item-bottom {
     flex-direction: row;
     align-items: flex-start;
     gap: 60px;
-  }
+  }}
 
-}
 
 .projects-item-title {
   font-weight: 500;
@@ -101,8 +107,10 @@
   letter-spacing: 0.02em;
   text-transform: uppercase;
   margin-bottom: 16px;
+}
 
   @media screen and (min-width: 768px) {
+    .projects-item-title {
     font-size: 36px;
     line-height: 1.33333;
     letter-spacing: 0.01em;
@@ -140,22 +148,17 @@
 .projects-load-btn {
   position: relative;
   background-color: transparent;
-
   font-weight: 400;
   font-size: 20px;
   line-height: 1.6;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-
   border: none;
-
   display: block;
   margin: 0 auto;
-  margin-top: 80px;
+  margin-top: 40px;
   padding: 0;
-
   transition: color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-
   &:hover,
   &:focus {
     color: var(--accent);
@@ -175,6 +178,17 @@
     animation: expand-width 1s infinite;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .projects-load-btn {
+    margin-top: 60px;
+}}
+
+@media screen and (min-width: 1280px) {
+  .projects-load-btn {
+    margin-top: 80px;
+}}
+
 
 @keyframes expand-width {
   0% {
