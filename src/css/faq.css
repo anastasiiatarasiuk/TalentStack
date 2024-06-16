@@ -1,0 +1,155 @@
+.faq {
+    padding: 20px 0; 
+    position: relative;
+    z-index: 1;
+}
+
+.faq::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/faq/decor-bg-faq.png'); 
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: cover;
+    z-index: -1;
+}
+
+.faq h2 {
+    font-family: Impact;
+    text-align: left;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    font-size: 52px;
+    letter-spacing: 1.8px;
+    line-height: 64px;
+}
+
+.faq .text-green {
+    color: var(--accent);
+}
+
+.accordion-container {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.ac {
+    border-bottom: 1px solid #E4E5E6;
+}
+
+.ac-header {
+    margin: 0;
+    position: relative;
+}
+
+.ac-title {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    font-family: Poppins Regular;
+    font-size: 18 px;
+    letter-spacing: 0.5 px;
+    line-height: 28 px;
+    text-align: left;
+    cursor: pointer;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    position: relative;
+}
+
+.ac-title::after {
+    content: '\25BC';
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.3s;
+}
+
+.ac.is-active .ac-title::after {
+    transform: translateY(-50%) rotate(180deg); 
+}
+
+.ac-panel {
+    display: none;
+    padding: 15px;
+    background: #BCDFD1;
+}
+
+.ac.is-active .ac-panel {
+    display: block;
+    background: #BCDFD1;
+}
+
+.ac.is-active .ac-title {
+    background: #00B068;
+    color: #fff;
+}
+
+@media (max-width: 360px) {
+    .faq {
+        width: 100%;
+    }
+
+    .faq::before {
+        display: none;
+    }
+
+    .faq h2 {
+        font-size: 1.2em;
+    }
+
+    .ac-title {
+        font-size: 0.9em;
+    }
+
+    .ac-text {
+        font-size: 0.9em;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+    .faq {
+        width: 100%;
+    }
+
+    .faq::before {
+        display: none;
+    }
+
+    .ac-header {
+        font-family: Poppins Regular;
+        font-size: 20 px;
+        letter-spacing: 0.5 px;
+        line-height: 32 px;
+        margin: 0;
+    }
+}
+
+@media (min-width: 1280px) {
+    .faq {
+        display: flex;
+        justify-content: flex-end; /* Вирівнюємо акордеон вправо */
+    }
+
+    .accordion-container {
+        width: 50%; /* Задаємо ширину для акордеона */
+    }
+
+    .faq::before {
+        width: 50%; /* Фонова картинка займає 50% ширини */
+    }
+
+    .faq h2 {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        margin: 0;
+    }
+}
