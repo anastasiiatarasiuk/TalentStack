@@ -6,9 +6,5 @@ import './js/hero.js';
 import './js/tech-skills';
 
 import './js/projects.js';
-
+import './js/benefits.js';
 import './js/about-me.js';
-
-
-
-
