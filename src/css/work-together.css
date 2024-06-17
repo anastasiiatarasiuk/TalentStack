@@ -141,15 +141,10 @@
     left: 655.74px;
     top: 150px;
     margin: -250px;
-    background-image: url('../img/work-together.img/decor-TAB.png');
+    background-image: url('../img/work-together/decor-TAB.png');
     background-size: cover;
-    z-index: -1;
   }
-  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    .background-image {
-      background-image: url('../img/work-together.img/decor-TAB@2x.png');
-    }
-  }
+
   .title-together {
     font: 400 108px / 1.14815 'Impact', sans-serif;
     letter-spacing: 0.02em;
@@ -186,18 +181,13 @@
     position: absolute;
     width: 526px;
     height: 408px;
-    left: 930.03px;
-    margin: -250px;
-    background-image: url('../img/work-together.img/decor-PK.png');
+    /* left: 930.03px; */
+    margin-top: -144px;
+    background-image: url('../img/work-together/decor-PK.png');
     background-size: cover;
-    z-index: -1;
+    /* margin-bottom: 64px; */
   }
 
-  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    .background-image {
-      background-image: url('../img/work-together.img/decor-PK@2x.png');
-    }
-  }
   .title-together {
     letter-spacing: 0.02em;
     height: 248px;
