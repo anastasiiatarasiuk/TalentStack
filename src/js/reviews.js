@@ -4,7 +4,10 @@ import 'swiper/css';
 import axios from 'axios';
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
+import { addSvgIcon } from './svg-utils.js';
 
+addSvgIcon('.swiper-button-prev', 'icon-arrow-narrow-left', 'arrow-icon', 24, 24);
+addSvgIcon('.swiper-button-next', 'icon-arrow-narrow-right', 'arrow-icon', 24, 24);
 
 function showErrorToast(message) {
   iziToast.show({
@@ -22,7 +25,7 @@ function renderReviewItem(item) {
   return ` <li class="reviews-item swiper-slide" data-id="${item._id}" tabindex="0">
        <div class="reviews-content ">
        <p>${item.review}</p>
-</div>
+        </div>
         <div class="block-author-review">
           <img class="author-photo-review" src="${item.avatar_url}" alt="photo author">
           <p class="author-name-review">${item.author}</p>
@@ -127,3 +130,21 @@ axios.get('https://portfolio-js.b.goit.study/api/reviews')
 
   });
 
+let darkTheme = false;
+const reviews = document.querySelector('#reviews');
+document
+  .querySelector('#switch')
+  .addEventListener('click', () => {
+    darkTheme = !darkTheme;
+    if (darkTheme) {
+      reviews.style.setProperty('--review-card-bg', '#2A2D32');
+      reviews.style.setProperty('--review-btn-hover-bg', '#3B3F45');
+      reviews.style.setProperty('--review-btn-arrow-color', '#F0F0F0');
+      reviews.style.setProperty('--review-btn-border-color', '#2A2D32');
+    } else {
+      reviews.style.setProperty('--review-card-bg', 'var(--light-grey)');
+      reviews.style.setProperty('--review-btn-hover-bg', 'var(--light-grey)');
+      reviews.style.setProperty('--review-btn-arrow-color', '#292929');
+      reviews.style.setProperty('--review-btn-border-color', 'rgba(41, 41, 41, 0.30)');
+    }
+  });
