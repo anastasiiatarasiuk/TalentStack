@@ -1,7 +1,7 @@
 import axios from 'axios';
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
-
+import { modal } from './pop-up';
 const sendForm = document.querySelector('.send-form');
 const valueEmail = document.querySelector('.value-email');
 const inputFormValue = document.querySelector('.input-form');
@@ -69,11 +69,7 @@ sendForm.addEventListener('submit', async e => {
     if (response.status === 201) {
       sendForm.reset();
       checkMark.style.display = 'none';
-      iziToast.info({
-        title: 'YES YES',
-        message: 'Thank you for your interest in cooperation!',
-        position: 'topRight',
-      });
+      modal();
     } else {
       throw new Error(response.data.message || 'Unknown error');
     }
