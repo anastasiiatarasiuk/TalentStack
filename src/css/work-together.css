@@ -138,9 +138,8 @@
     position: absolute;
     width: 336px;
     height: 260px;
-    left: 655.74px;
-    top: 150px;
-    margin: -250px;
+    margin-top: -104px;
+    left: 400px;
     background-image: url('../img/work-together/decor-TAB.png');
     background-size: cover;
   }
@@ -181,11 +180,10 @@
     position: absolute;
     width: 526px;
     height: 408px;
-    /* left: 930.03px; */
+    left: 690px;
     margin-top: -144px;
     background-image: url('../img/work-together/decor-PK.png');
     background-size: cover;
-    /* margin-bottom: 64px; */
   }
 
   .title-together {
