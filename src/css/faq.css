@@ -1,4 +1,5 @@
 .faq {
+    margin: auto;
     padding: 20px 0; 
     position: relative;
     z-index: 1;
@@ -7,18 +8,18 @@
 .faq::before {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    bottom: 20px;
+    left: 20px;
+    width: 40%;
+    height: 40%;
     background-image: url('../img/faq/decor-bg-faq.png'); 
     background-repeat: no-repeat;
-    background-position: left top;
-    background-size: cover;
+    background-position: left bottom;
+    background-size: contain;
     z-index: -1;
 }
 
-.faq h2 {
+.faq-title {
     font-family: Impact;
     text-align: left;
     margin-bottom: 40px;
@@ -28,68 +29,72 @@
     line-height: 64px;
 }
 
-.faq .text-green {
+.text-green {
     color: var(--accent);
 }
 
-.accordion-container {
+.faq-list {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.ac {
-    border-bottom: 1px solid #E4E5E6;
-}
-
-.ac-header {
+.faq-subtitle {
     margin: 0;
     position: relative;
-}
-
-.ac-title {
-    display: block;
-    width: 100%;
-    padding: 15px;
     font-family: Poppins Regular;
     font-size: 18 px;
     letter-spacing: 0.5 px;
     line-height: 28 px;
-    text-align: left;
-    cursor: pointer;
-    text-decoration: none;
-    border: none;
-    outline: none;
-    position: relative;
+    text-transform: uppercase;
 }
 
-.ac-title::after {
-    content: '\25BC';
-    position: absolute;
-    right: 15px;
-    top: 50%;
-    transform: translateY(-50%);
+.faq-btn {
+    background-color: #BCDFD1;
+    color: #000000;
+    cursor: pointer;
+    /* padding: 18px; */
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-family: Poppins Regular;
+    font-size: 18 px;
+    letter-spacing: 0.5 px;
+    line-height: 28 px;
+    transition: 0.4s;
+    border-radius: 16px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.faq-icon {
+    flex-shrink: 0;
     transition: transform 0.3s;
 }
 
-.ac.is-active .ac-title::after {
-    transform: translateY(-50%) rotate(180deg); 
+.ac.is-active .faq-icon use {
+    /* background-color: #BCDFD1; */
+    href: '#icon-Vector-up';
+}
+
+.ac.is-active .faq-icon {
+    transform: rotate(180deg);
 }
 
 .ac-panel {
-    display: none;
-    padding: 15px;
-    background: #BCDFD1;
+    background-color: #BCDFD1;
+    border-radius: 16px; 
 }
 
 .ac.is-active .ac-panel {
-    display: block;
-    background: #BCDFD1;
+    /* display: block; */
 }
 
-.ac.is-active .ac-title {
-    background: #00B068;
-    color: #fff;
+.ac.is-active .faq-btn {
+    background-color: #BCDFD1;
 }
 
 @media (max-width: 360px) {
@@ -101,52 +106,41 @@
         display: none;
     }
 
-    .faq h2 {
-        font-size: 1.2em;
-    }
-
-    .ac-title {
-        font-size: 0.9em;
+    .faq-btn {
+        /* font-size: 0.9em; */
     }
 
     .ac-text {
-        font-size: 0.9em;
+        /* font-size: 0.9em; */
     }
 }
 
 @media (min-width: 768px) and (max-width: 1279px) {
     .faq {
-        width: 100%;
+        width: 90%;
     }
 
     .faq::before {
         display: none;
-    }
-
-    .ac-header {
-        font-family: Poppins Regular;
-        font-size: 20 px;
-        letter-spacing: 0.5 px;
-        line-height: 32 px;
-        margin: 0;
     }
 }
 
 @media (min-width: 1280px) {
     .faq {
         display: flex;
-        justify-content: flex-end; /* Вирівнюємо акордеон вправо */
+        justify-content: flex-end;
+        width: 80%;
     }
 
-    .accordion-container {
-        width: 50%; /* Задаємо ширину для акордеона */
+    .faq-list {
+        width: 50%;
     }
 
     .faq::before {
-        width: 50%; /* Фонова картинка займає 50% ширини */
+        width: 50%;
     }
 
-    .faq h2 {
+    .faq-title {
         position: absolute;
         top: 20px;
         left: 20px;
