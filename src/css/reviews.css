@@ -1,3 +1,10 @@
+#reviews {
+  --review-card-bg: var(--light-grey);
+  --review-btn-hover-bg: var(--light-grey);
+  --review-btn-arrow-color: #292929;
+  --review-btn-border-color: rgba(41, 41, 41, 0.30);
+}
+
 
 .swiper {
   padding: 0 20px !important;
@@ -21,7 +28,7 @@
   width: 100%;
   padding: 32px;
   border-radius: 16px;
-  background: var(--light-grey);
+  background: var(--review-card-bg);
   outline: none;
   font-weight: 300;
   line-height: 1.5;
@@ -35,6 +42,7 @@
 .reviews-content {
   flex-grow: 1;
 }
+
 .block-author-review {
   margin-top: 24px;
   display: flex;
@@ -44,7 +52,7 @@
 
 .author-photo-review {
   border-radius: 24px;
-  background: #797979;
+  /*background: #797979;*/
   width: 40px;
   height: 40px;
 }
@@ -66,7 +74,10 @@
 
 .btn-switch-reviews {
   border-radius: 8px;
-  border: 1px solid rgba(41, 41, 41, 0.30);
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--review-btn-border-color);
+  background-color: transparent;
   width: 40px;
   height: 40px;
   display: flex;
@@ -80,12 +91,12 @@
 }
 
 .swiper-button-prev .arrow-icon, .swiper-button-next .arrow-icon {
-  stroke: #292929;
+  stroke: var(--review-btn-arrow-color);
   fill: transparent;
 }
 
 .swiper-button-prev:hover, .swiper-button-next:hover {
-  background-color: var(--light-grey);
+  background-color: var(--review-btn-hover-bg);
 }
 
 .reviews-not-found {
