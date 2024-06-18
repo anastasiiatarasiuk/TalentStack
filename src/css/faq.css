@@ -1,0 +1,144 @@
+.ac-trigger::after {
+    content: '' !important;
+}
+
+.ac .ac-trigger {
+font-weight: 400 !important;
+font-size: 18px !important;
+line-height: 156% !important;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+font-family: 'Poppins' !important;
+}
+
+.ac-text {
+    font-family: 'Poppins' !important;
+}  
+
+.ac {
+    border: none !important;
+    background-color: transparent !important;
+}
+
+.faq-item {
+    padding: 24px 28px;
+    border-bottom: 1px solid #ccc !important;
+}
+
+.faq-btn:active,
+.faq-btn:focus {
+  color: #000000 !important;
+}
+
+.faq-item.ac.is-active {
+    background-color: #bcdfd1 !important;
+    border-radius: 16px;
+}
+
+.faq-title {
+    font-family: Impact;
+    text-align: left;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    font-size: 52px;
+    letter-spacing: 1.8px;
+    line-height: 64px;
+}
+
+.text-green {
+    color: var(--accent);
+}
+
+.faq-subtitle {
+    font-family: Poppins Regular;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 156%;
+    letter-spacing: 0.03em;
+}
+
+.faq-btn {
+    background-color: #BCDFD1;
+    color: #000000;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-family: Poppins Regular;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    line-height: 1.6;
+    transition: 0.4s;
+    border-radius: 16px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.faq-icon {
+    flex-shrink: 0;
+    transition: transform 0.3s;
+    fill: none !important;
+    stroke: #292929 !important;
+    position: absolute;
+    right: -5px;
+    top: 10px;
+}
+
+.ac-panel {
+    background-color: #BCDFD1;
+    border-radius: 16px; 
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    font-family: 'Poppins' !important;
+}
+
+.ac.is-active .faq-btn {
+    background-color: #BCDFD1;
+}
+
+.ac-text {
+    font: 300 16px 'Poppins' !important;
+    letter-spacing: 0.03em;
+}
+
+@media (min-width: 768px) {
+    
+    .faq-title {
+      font-family: Impact;
+      font-size: 108px;
+      letter-spacing: 1.8px;
+      line-height: 124px;
+    }
+
+    .faq-btn {
+      font-size: 20px;
+      line-height: 1.6;
+    }
+}
+
+@media (min-width: 1280px) {
+    .faq-container {
+        display: flex;
+        gap: 140px;
+    }
+
+    .faq-list {
+        margin-top: 276px;
+    }
+
+    .faq-title {
+        margin-bottom: 240px;
+    }
+
+    .img-container {
+        width: 526px;
+        height: 408px;
+        background-image: url('../img/faq/decor-bg-faq.png');
+        background-repeat: no-repeat;
+      }
+}

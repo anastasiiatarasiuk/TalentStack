@@ -70,6 +70,8 @@
             d="M6.333 25.667l19.333-19.333M25.667 6.333h-18M25.667 6.333v18"></path>
     </symbol>
 
+<symbol id="icon-Vector-up" viewBox="0 0 50 32"><path stroke-linecap="round" stroke-width="7.111" d="M46.222 28.444l-21.333-21.333-21.333 21.333"/></symbol>
+<symbol id="icon-Vector-down" viewBox="0 0 50 32"><path stroke-linecap="round" stroke-width="7.111" d="M46.222 3.556l-21.333 21.333-21.333-21.333"/></symbol>
   </defs>
 
 </svg>
