@@ -6,6 +6,7 @@ const menuLinks = document.querySelectorAll(".menu-item-nav");
 const body = document.querySelector("body");
 const socialBoxHero = document.querySelector('.social-list-box');
 const greenBoxHero = document.querySelector('.green-box');
+const projectsLoadBtn = document.querySelector('.projects-load-btn');
 
 
 const toggleMenu = () => {
@@ -51,14 +52,20 @@ checkbox.addEventListener('change', function () {
     backdrob.style.backgroundColor = isChecked ? "#292929": "#f0f0f0";
     greenBoxHero.style.backgroundColor = isChecked ? '#204136' : '#BCDFD1';
     socialBoxHero.style.backgroundColor = isChecked ? '#2a2d32' : '#E4E5E6';
+    projectsLoadBtn.style.color = isChecked ?  "#FFFFFF" : "#292929";
+    
 
 
   }
   changeBackGround(checkbox.checked || checkboxMob.checked);
 
- 
+
+
   
 
+
+
+  
   import backgroundImageTop from '../img/header/Group68-1x.png';
   import backgroundImageBottom from '../img/header/Group64-1x.png';
 
@@ -69,3 +76,8 @@ backgroundElement.style.setProperty('--background-image', `url(${backgroundImage
 const backgroundElementBottom = document.querySelector('.background');
 backgroundElementBottom.style.setProperty('--background-image-bottom', `url(${backgroundImageBottom})`);
 
+
+
+// document.querySelectorAll('.projects-item-btn').forEach(btn => {
+//     btn.style.backgroundColor = isChecked ? "#292929" : 'var(--light-grey)';
+//   });
