@@ -10,4 +10,5 @@ import './js/about-me.js';
 import './js/reviews.js';
 import './js/render-projects.js';
 import './js/about-me.js';
+import './js/work-together.js';
 

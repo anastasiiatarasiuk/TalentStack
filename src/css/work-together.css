@@ -1,0 +1,318 @@
+.contacts-together {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.title-together {
+  font: 400 52px / 1.23077 'Impact', sans-serif;
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 123%;
+  letter-spacing: 0.64px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.title-together-span {
+  color: #00b068;
+}
+
+.text-together {
+  font: 400 18px / 1.55556 'Poppins', sans-serif;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  margin-bottom: 32px;
+  height: 84px;
+  width: 100%;
+}
+
+.contact-list-together {
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact-list-item-together {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  height: 24px;
+  gap: 16px;
+}
+.link-contacts {
+  font: 300 16px / 1.5 'Poppins', sans-serif;
+  letter-spacing: 0.03em;
+}
+
+.link-contacts:hover,
+.link-contacts:focus {
+  color: #00b068;
+}
+
+.send-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.input-form {
+  font: 300 16px / 1.5 'Poppins', sans-serif;
+  letter-spacing: 0.03em;
+  color: rgba(41, 41, 41, 0.4);
+  width: 100%;
+  height: 48px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background: #e4e5e6;
+  color: #292929;
+  padding: 16px;
+}
+.value-email {
+  font: 300 12px / 1.33333 'Poppins', sans-serif;
+  letter-spacing: 0.04em;
+  color: #e74a3b;
+  display: none;
+}
+
+.message-form {
+  font: 300 16px / 1.5 'Poppins', sans-serif;
+  letter-spacing: 0.03em;
+  color: rgba(41, 41, 41, 0.4);
+  width: 100%;
+  height: 128px;
+  padding: 16px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background: #e4e5e6;
+  color: #292929;
+  resize: none;
+}
+
+.button-send-together {
+  width: 100%;
+  height: 48px;
+  border-radius: 8px;
+  padding: 12px 24px;
+  background: #00b068;
+  border: none;
+  font: 500 16px / 1.5 'Poppins', sans-serif;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #f0f0f0;
+}
+.button-send-together:hover {
+  background: #009156;
+}
+.input-container {
+  position: relative;
+}
+
+.contacts-icon {
+  fill: none;
+  stroke: rgb(0, 176, 104);
+}
+
+.checkmark {
+  fill: rgb(0, 176, 104);
+  stroke: white;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .container-together {
+    position: relative;
+  }
+  .background-image {
+    position: absolute;
+    width: 336px;
+    height: 260px;
+    margin-top: -104px;
+    left: 400px;
+    background-image: url('../img/work-together/decor-TAB.png');
+    background-size: cover;
+  }
+
+  .title-together {
+    font: 400 108px / 1.14815 'Impact', sans-serif;
+    letter-spacing: 0.02em;
+    margin-bottom: 60px;
+  }
+  .title-together-span {
+    font: 400 108px / 1.14815 'Impact', sans-serif;
+  }
+  .text-together {
+    font: 400 20px / 1.6 'Poppins', sans-serif;
+    width: 488px;
+  }
+
+  .contact-list-together {
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin-bottom: 60px;
+  }
+
+  .input-form {
+    font: 300 16px / 1.5 'Poppins', sans-serif;
+    letter-spacing: 0.03em;
+  }
+
+  .button-send-together {
+    width: 173px;
+    height: 48px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .background-image {
+    position: absolute;
+    width: 526px;
+    height: 408px;
+    left: 690px;
+    margin-top: -144px;
+    background-image: url('../img/work-together/decor-PK.png');
+    background-size: cover;
+  }
+
+  .title-together {
+    letter-spacing: 0.02em;
+    height: 248px;
+    width: 514px;
+    margin-bottom: 80px;
+  }
+  .text-together {
+    margin-bottom: 110px;
+  }
+  .container-contacts {
+    display: flex;
+  }
+  .contact-list-together {
+    flex-direction: column;
+  }
+
+  .send-form {
+    min-width: 592px;
+    padding-top: 328px;
+    margin-left: 136px;
+  }
+  .input-form {
+    width: 100%;
+  }
+  .message-form {
+    width: 100%;
+  }
+
+  .container-together {
+    display: flex;
+  }
+}
+/* <--============================ MODAL ===============================--> */
+
+ 
+   .modal-overlay{
+    position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+      z-index: 10000;
+      display: none;
+   }
+  .modal {
+    position: fixed;
+    z-index: 10001;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #FCFCFC;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid rgba(250, 250, 250, 0.1);
+    border-radius: 16px;
+    padding: 48px 32px;
+    width: 320px;
+    min-height: 328px;
+    pointer-events: auto;
+    cursor: default;
+    display: none;
+    flex-direction: column;
+  }
+
+  .modal-close-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    line-height: 0;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    border-radius: 8px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .modal-close-btn:active {
+    background-color: lightgray;
+    stroke: black;
+    border: none;
+  }
+
+  .modal-close-btn-icon {
+    position: absolute;
+    stroke: black;
+    stroke-width: 2px;
+  }
+
+  .modal-title {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #00b068;
+  }
+
+  .modal-text {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: #292929;
+    padding-top: 20px;
+  }
+
+
+/* ------------------------------Tablet styles------------------------------- */
+
+@media screen and (min-width: 768px) {
+  .modal {
+    padding: 64px;
+    width: 492px;
+    min-height: 280px;
+  }
+
+  .modal-close-btn {
+    top: 20px;
+    right: 20px;
+  }
+}
